@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3_2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #7b27c4, #581ad5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 700px;
+        }
+
+        .login-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .login-image {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 85%;
+            padding: 8px 10px 8px 40px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            background-color: #f7f7f7;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #581ad5;
+        }
+
+        .input-group .icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: gray; 
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 30px;
+            background-color: #2db257;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #2db257;
+        }
+
+        .links {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .forgot-text {
+            color: #000;
+            display: inline;
+        }
+
+        .links a {
+            color: #2db257;
+            text-decoration: none;
+            display: inline;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-image">
+                <img src="C:\Users\Dell\Downloads\Orange\Tasks\CSS\Media\Laptop.png" alt="Laptop">
+            </div>
+            <div class="login-form">
+                <h2>Member Login</h2>
+                <form>
+                    <div class="input-group">
+                        <span class="icon fa fa-envelope"></span>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="icon fa fa-lock"></span>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="login-btn">LOGIN</button>
+                    <div class="links">
+                        <span class="forgot-text">Forgot </span><a href="#">Username / Password?</a>
+                        <br><br>
+                        <a href="#" style="margin-top: 20px;">Create your account ➞</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
